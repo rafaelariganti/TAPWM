@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<title>Internet das coisas (IoT)</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="icon" href="img/globe-solid.svg" type="image/svg+xml">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-gray w3-collapse w3-top w3-large w3-padding" style=" z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Rafaela<br>Riganti</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Início</a> 
+    <a href="#conceito" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Conceito</a> 
+    <a href="#exemplos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Exemplos</a> 
+    <a href="#protocolos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Protocolos utilizados</a> 
+    <a href="#desafios" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Desafios</a> 
+    <a href="#referencias" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Referências</a>
+  </div>
+</nav>
+
+<header class="w3-container w3-top w3-hide-large w3-gray w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Rafaela Riganti</span>
+</header>
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <div class="w3-container" style="margin-top:80px" id="conceito">
+    <h1 class="w3-jumbo"><b>Internet das coisas (IoT) </b></h1>
+    <h1 class="w3-xxxlarge w3-text-black"><b>Conceito</b></h1>
+    <hr style="width:50px;border:5px solid #243642" class="w3-round">
+    <p>Internet das Coisas (IoT) é a tecnologia que permite conectar objetos físicos à internet, permitindo que eles troquem dados. </p>
+    <p>
+        Os dispositivos IoT são equipados com sensores e software que permitem coletar e transmitir dados 
+        Os dados podem ser usados para automatizar ações ou informar os utilizadores 
+        A IoT pode ser usada em casa, no carro, nas lojas, na saúde, no agronegócio, entre outros.<br> 
+        <br>Exemplos de aplicações:
+        <br>Monitorar e controlar a temperatura, a iluminação e os sistemas de segurança de uma casa; 
+        <br>Evitar colisões, planear rotas e estacionar em vagas apertadas; 
+        <br>Monitorizar pacientes remotamente, por exemplo, com relógios inteligentes e dosadores de medicamentos; 
+        <br>Medir a umidade, nutrientes e temperatura do solo para a irrigação e uso de fertilizantes; 
+        <br>Monitorar operações de plantio e colheita, identificar pragas e analisar o crescimento das culturas. 
+    </p>
+  </div>
+  
+ 
+  <div class="w3-container" id="exemplos" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Exemplos</b></h1>
+    <hr style="width:50px;border:5px solid #243642" class="w3-round">
+    <p>A Internet das Coisas (IoT) enfrenta desafios de segurança, infraestrutura, gestão de dados e outros. </p>
+    <p>
+        
+    </p>
+  </div>
+
+   <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="img/iot.webp" style="width:100%" onclick="onClick(this)" alt="Exemplos de serviços">
+      <img src="" style="width:100%" onclick="onClick(this)" alt="">
+    </div>
+
+    <div class="w3-half">
+      <img src="" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="" style="width:100%" onclick="onClick(this)" alt="">
+    </div>
+  </div>
+
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  
+  <div class="w3-container" id="protocolos" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Protocolos utilizados</b></h1>
+    <hr style="width:50px;border:5px solid #243642" class="w3-round">
+    <p>Os protocolos da Internet das Coisas (IoT) são padrões de comunicação que permitem que os dispositivos troquem dados. Eles são responsáveis por garantir que as informações de um dispositivo sejam lidas e compreendidas por outro. 
+    </p>
+    <p><b>Exemplos</b>:</p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="img/MQTT.png" alt="mqtt" style="width:100%">
+        <div class="w3-container">
+          <h3>MQTT</h3>
+          <p>MQTT (Message Queuing Telemetry Transport) é um protocolo de comunicação entre dispositivos que permite a troca de mensagens entre máquinas. É um dos principais protocolos utilizados na Internet das Coisas (IoT). <br>
+           <br> Principais características:
+           <br> É um protocolo leve e otimizado para redes TCP/IP;
+           <br> É baseado no modelo Publicador-Subscritor;
+           <br> É econômico em termos de banda de internet;
+            <br>É seguro, com vários mecanismos de autenticação e segurança de dados;
+            <br>É fácil de implementar.<br>
+            <br>Aplicações:<br> Automação de processos, Controle de mercadorias, Controle de fluxo de pessoas, Controle de eficiência energética, Monitoramento de oleodutos. </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="img/COAP.jpg" alt="coap" style="width:100%">
+        <div class="w3-container">
+          <h3>CoAP</h3>
+          <p>O protocolo CoAP (Constrained Application Protocol) é um protocolo de internet que permite a comunicação de dispositivos restritos com a internet. Ele é adequado para dispositivos com pouca energia, como sensores, wearables e sistemas embarcados.<br> 
+           <br> Características do CoAP:
+            <br>Utiliza UDP (User Datagram Protocol) em vez de TCP (Transmission Control Protocol); 
+            <br>Tem um cabeçalho mais leve e uma abordagem binária e não textual;
+            <br>É inspirado no HTTP e segue princípios de RESTful; 
+            <br>Utiliza os métodos GET, POST, PUT e DELETE; 
+            <br>É altamente confiável, com mecanismos para garantir a entrega de mensagens; 
+            <br>É escalável, podendo ser adaptado a vários dispositivos em diversas aplicações IoT. </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="img/amqp-structure.png" alt="amqp" style="width:100%">
+        <div class="w3-container">
+          <h3>AMQP</h3>
+          <p>AMQP (Advanced Message Queuing Protocol) é um protocolo de comunicação que permite a troca de mensagens entre aplicações. Ele é usado para criar aplicativos híbridos que podem ser executados em várias plataformas. <br>
+            <br>Principais características do AMQP: 
+            <br>É um protocolo padrão aberto;
+            <br>É orientado para conexão;
+            <br>Usa uma codificação binária;
+            <br>Incorpora esquemas de controle de fluxo;
+            <br>É programável, permitindo que as aplicações definam rotas, exchanges, filas, e outras entidades
+            <br>Permite a interoperabilidade entre muitas tecnologias e plataformas.<br>
+            <br>Aplicações do AMQP:<br> Serviços financeiros, Internet das Coisas (IoT), Cloud computação. </p>
+        </div>
+      </div>
+    </div>
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="img/wifi.webp" alt="wifi" style="width:100%">
+        <div class="w3-container">
+          <h3> WI-FI</h3>
+          <p>Wi-Fi é uma tecnologia que permite a conexão à internet sem fio, usando ondas de rádio. Foi criada em 1997 e se tornou popular com o surgimento dos primeiros computadores portáteis. <br>
+            <br>Como funciona 
+            <br>O Wi-Fi usa o padrão IEEE 802.11;
+            <br>O roteador Wi-Fi conecta-se ao modem da operadora de internet por cabo de rede;
+            <br>O roteador divide a conexão com outros dispositivos, que podem se conectar por Wi-Fi ou cabo de rede;
+            <br>Cada roteador cria uma rede própria, com um nome (SSID) e uma senha;
+            <br>Para se conectar, os dispositivos precisam ter uma placa de rede Wi-Fi embutida.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="img/bluetooth.png" alt="bluetooth" style="width:100%">
+        <div class="w3-container">
+          <h3>Bluetooth</h3>
+          <p>Bluetooth é uma tecnologia de comunicação sem fio que permite a troca de dados entre dispositivos digitais. É uma ligação direta entre dois dispositivos, sem a necessidade de uma rede de suporte, como um roteador. <br>
+            <br>Como funciona
+            <br>O Bluetooth transmite dados por ondas de rádio de curto alcance, na faixa de 2,4 GHz;
+            <br>Para que dois dispositivos se conectem, eles precisam suportar o mesmo perfil; 
+            <br>Ao ligar dispositivos Bluetooth pela primeira vez, é necessário registrá-los, o que é chamado de "emparelhamento". </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="img/dds.jpg" alt="dds" style="width:100%">
+        <div class="w3-container">
+          <h3>DDS - Data Distribution Service</h3>
+          <p>Protocolo que integra dispositivos inteligentes de alta performance, enquanto a Internet das Coisas (IoT) é uma rede de objetos e dispositivos conectados à internet. <br>
+           <br> DDS É um protocolo centrado em dados, Integra dispositivos inteligentes de alta performance. <br>
+            <br>IoT
+            <br>É uma rede de objetos e dispositivos conectados à internet; 
+            <br>Permite que objetos sejam dotados de dispositivos sensoriais; 
+            <br>Pode ser usada para otimizar processos, reduzir custos e acidentes, e aumentar a sustentabilidade 
+            <br>É amplamente usada em ambientes industriais (IIoT) e é sinônimo da Indústria 4.0. <br>
+            <br>Aplicações da IoT
+            <br>Automatização domiciliar;
+            <br>Monitoramento remoto de pacientes;
+            <br>Redução de custos e melhoria da gestão organizacional;
+            <br>Contagem em tempo real do número de visitantes;
+            <br>Geração de feedback sobre campanhas de marketing e alterações de preços.</p>
+        </div>
+      </div>
+    </div>
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="img/m2m.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>M2M</h3>
+          <p>Machine-to-Machine (M2M) é uma tecnologia que permite que máquinas e dispositivos troquem informações automaticamente, sem a necessidade de intervenção humana. <br>
+           <br> Como funciona
+           <br> M2M utiliza redes como redes celulares e protocolos de comunicação M2M especializados. 
+           <br>Sensores e medidores podem comunicar informações registradas, como temperatura ou nível de estoque, para software de aplicação. 
+           <br>O software de aplicação pode usar essas informações para ajustar processos ou fazer pedidos de reposição de estoque. <br>
+           <br>Aplicações
+           <br>M2M é usado em vários setores, como manufatura, saúde, negócios e seguros. 
+           <br>M2M é a base da internet das coisas (IoT). 
+           <br>M2M pode ser usado para automatizar, otimizar e agilizar processos. 
+           <br>M2M pode ser usado para medir a eficiência de etapas produtivas ou as condições de armazenamento. </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="img/zigbee.png" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Zigbee</h3>
+          <p>Zigbee é uma tecnologia de comunicação sem fio que permite a interconexão de dispositivos. É muito utilizada em automação residencial e industrial. <br>
+           <br> Características:
+           <br> Baixo consumo de energia; 
+            <br> Rede de malha para transmissão de dados;
+           <br> Cobertura mais ampla e eficiente;
+           <br> Segurança robusta;
+           <br> Capacidade de suportar grandes redes de dispositivos interconectados;
+           <br> Facilidade de implementação.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container" id="desafios" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Desafios</b></h1>
+    <hr style="width:50px;border:5px solid #243642" class="w3-round">
+    <p>A Internet das Coisas (IoT) enfrenta desafios de segurança, infraestrutura, gestão de dados e outros. </p>
+    <p>
+        <br>Autenticação fraca: Os dispositivos IoT usam senhas padrão e fracas.
+        <br>Criptografia de dados: Os dispositivos IoT não protegem adequadamente os dados confidenciais.
+        <br>Software vulnerável: Os dispositivos IoT podem ter software vulnerável, que é difícil de corrigir.
+        <br>Protocolos inseguros: Os dispositivos IoT usam interfaces e protocolos de rede inseguros.
+        <br>Falta de padronização: A falta de padrões e requisitos de segurança contribui para a segurança fraca da IoT.<br>
+        <br>Desafios de infraestrutura 
+        <br>Falta de investimentos: A IoT depende de uma infraestrutura de telecomunicações robusta, mas o Brasil enfrenta problemas de conectividade em muitas regiões.
+        <br>Desafios de gestão de dados 
+        <br>Gerenciamento de dados: A implementação de chips IoT gera uma quantidade massiva de dados, que precisam ser gerenciados, armazenados e analisados de maneira eficiente.
+        <br>Outros desafios Má gestão e configuração incorreta, Desconhecimento dos dispositivos conectados, Fragilidade que a IoT traz para um sistema, Ataques cibernéticos. 
+    </p>
+  </div>
+
+  <div class="w3-container" id="referencias" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Referências</b></h1>
+    <hr style="width:50px;border:5px solid #243642" class="w3-round">
+    
+    <p>ALCTEL. O que é protocolo IOT e como funciona na prática? | Alctel | Soluções Empresariais. Disponível em: <a href="https://www.alctel.com.br/o-que-e-protocolo-iot-e-como-funciona-na-pratica" target="_blank">www.alctel.com.br</a>. Acesso em: 25 fev. 2025.</p>
+    
+    <p>Tecnologias e protocolos de IoT | Microsoft Azure. Disponível em: <a href="https://azure.microsoft.com/pt-br/solutions/iot/iot-technology-protocols" target="_blank">azure.microsoft.com</a>. Acesso em: 25 fev. 2025.</p>
+    
+    <p>WOOP. Wi-Fi ou ZigBee: o que é melhor e quais as diferenças? - WEG Home. Disponível em: <a href="https://www.weg.net/weghome/blog/tecnologia/wi-fi-ou-zigbee-o-que-e-melhor-e-quais-as-diferencas" target="_blank">WEG Home</a>. Acesso em: 25 fev. 2025.</p>
+    
+    <p>MQTT - AWS IoT Core. Disponível em: <a href="https://docs.aws.amazon.com/pt_br/iot/latest/developerguide/mqtt.html" target="_blank">AWS Docs</a>. Acesso em: 25 fev. 2025.</p>
+    
+    <p>O que é o protocolo MQTT? | HI Tecnologia. Disponível em: <a href="https://materiais.hitecnologia.com.br/blog/o-que-e-protocolo-mqtt/" target="_blank">HI Tecnologia</a>. Acesso em: 25 fev. 2025.</p>
+    
+    <p>GUILHERME KUSTRO. Protocolo MQTT: O Que é, Como Funciona e Vantagens. Disponível em: <a href="https://www.automacaoindustrial.info/mqtt/" target="_blank">Automação Industrial</a>. Acesso em: 25 fev. 2025.</p>
+    
+    <p>TEAM, E. CoAP Protocol: Key Features, Use Cases, and Pros/Cons. Disponível em: <a href="https://www-emqx-com.translate.goog/en/blog/coap-protocol" target="_blank">EMQX</a>. Acesso em: 25 fev. 2025.</p>
+    
+    <p>CoAP. Disponível em: <a href="https://www.gta.ufrj.br/ensino/eel878/redes1-2019-1/vf/coap/" target="_blank">UFRJ</a>. Acesso em: 25 fev. 2025.</p>
+    
+    <p>SERRANO, T. M. AMQP - Protocolo de Comunicação para IoT. Disponível em: <a href="https://embarcados.com.br/amqp-protocolo-de-comunicacao-para-iot/" target="_blank">Embarcados</a>. Acesso em: 25 fev. 2025.</p>
+    
+    <p>SPELLURU. Visão geral do AMQP 1.0 no Barramento de Serviço do Azure - Azure Service Bus. Disponível em: <a href="https://learn.microsoft.com/pt-br/azure/service-bus-messaging/service-bus-amqp-overview" target="_blank">Microsoft Learn</a>. Acesso em: 25 fev. 2025.</p>
+    
+    <p>O que é tecnologia Bluetooth®? – Intel. Disponível em: <a href="https://www.intel.com.br/content/www/br/pt/products/docs/wireless/what-is-bluetooth.html" target="_blank">Intel</a>. Acesso em: 25 fev. 2025.</p>
+    
+    <p>Bluetooth: o que é e como funciona. Disponível em: <a href="https://www.hostgator.com.br/blog/bluetooth-o-que-e/" target="_blank">HostGator</a>. Acesso em: 25 fev. 2025.</p>
+    
+    <p>Machine-to-Machine: M2M communication explained. Disponível em: <a href="https://www.a1.digital/news/what-is-m2m-communication/" target="_blank">A1 Digital</a>. Acesso em: 25 fev. 2025.</p>
+    
+    <p>TO, C. Machine-to-machine (M2M). Disponível em: <a href="https://en.wikipedia.org/wiki/Machine_to_machine" target="_blank">Wikipedia</a>. Acesso em: 25 fev. 2025.</p>
+    
+    <p>SHEA, S. Machine-to-machine (M2M). Disponível em: <a href="https://www.techtarget.com/iotagenda/definition/machine-to-machine-M2M" target="_blank">TechTarget</a>. Acesso em: 25 fev. 2025.</p>
+    
+    <p>O que é Internet das Coisas? | IoT explicada | SAP. Disponível em: <a href="https://www.sap.com/brazil/products/artificial-intelligence/what-is-iot.html" target="_blank">SAP</a>. Acesso em: 25 fev. 2025.</p>
+    
+    <p>A Internet das Coisas. Disponível em: <a href="https://www.gta.ufrj.br/ensino/eel878/redes1-2016-1/16_1_2/IOT/iot.html" target="_blank">UFRJ</a>. Acesso em: 25 fev. 2025.</p>
+</div>
+
+
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Rafaela <a href="https://github.com/rafaelariganti" title="GITHUB" target="_blank" class="w3-hover-opacity">Riganti</a></p></div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
