@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jokenpô - Pedra, Papel, Tesoura</title>
+  <link rel="stylesheet" href="jogo.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Jokenpô</h1>
+    <div class="placar">
+      <p>Você: <span id="placarUsuario">0</span></p>
+      <p>Máquina: <span id="placarMaquina">0</span></p>
+      <p>Rodada: <span id="rodada">1</span>/3</p>
+    </div>
+    <div class="opcoes">
+      <button onclick="jogar('pedra')">🗻 Pedra</button>
+      <button onclick="jogar('papel')">📄 Papel</button>
+      <button onclick="jogar('tesoura')">✂️ Tesoura</button>
+    </div>
+    <div class="resultado" id="resultado"></div>
+    <div class="vencedor" id="vencedor"></div>
+  </div>
+
+  <script src="jogo.js"></script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</html>
