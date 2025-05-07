@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade de Funções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Atividade: Funções em JS</h1>
+
+    <section>
+        <h2>1. Maior de Três Números</h2>
+        <input type="number" id="n1">
+        <input type="number" id="n2">
+        <input type="number" id="n3">
+        <button onclick="maiorNumero()">Verificar</button>
+        <p id="resultado1"></p>
+    </section>
+
+    <section>
+        <h2>2. Números em Ordem Crescente</h2>
+        <input type="number" id="c1">
+        <input type="number" id="c2">
+        <input type="number" id="c3">
+        <button onclick="ordenarNumeros()">Ordenar</button>
+        <p id="resultado2"></p>
+    </section>
+
+    <section>
+        <h2>3. Verificar Palíndromo</h2>
+        <p style="font-size: 0.9em; color: #666;">
+            Frase ou palavra que se pode ler, indiferentemente, da esquerda para a direita ou vice-versa.
+        </p>
+        <input type="text" id="palavra">
+        <button onclick="verificarPalindromo()">Verificar</button>
+        <p id="resultado3"></p>
+    </section>
+    
+
+    <section>
+        <h2>4. Verificar Subconjunto</h2>
+        <input type="text" id="palavra1" placeholder="Palavra 1">
+        <input type="text" id="palavra2" placeholder="Palavra 2">
+        <button onclick="verificarSubconjunto()">Verificar</button>
+        <p id="resultado4"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
