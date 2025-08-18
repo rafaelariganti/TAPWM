@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Formulário SIM OU NÃO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form name="nomeform" onsubmit="return validar()" id="formulario">
+    <h2>Formulário SIM OU NÃO</h2>
+
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome">
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+
+    <label for="comentario">Comentário:</label>
+    <textarea name="comentario" id="comentario" rows="4"></textarea>
+
+    <label>Pesquisa:</label>
+    <div class="radio-group">
+        <label><input type="radio" name="pesquisa" value="sim"> Sim</label>
+        <label><input type="radio" name="pesquisa" value="nao"> Não</label>
+    </div>
+
+    <div class="botoes">
+        <button type="submit">Enviar</button>
+        <button type="button" onclick="limpar()">Limpar</button>
+    </div>
+
+    <div class="mensagem" id="msg"></div>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
